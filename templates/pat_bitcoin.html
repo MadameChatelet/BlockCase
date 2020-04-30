@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>  {{title}}</title>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+   <!--Font Awesome CDN-->
+
+   <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+	
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   
+   
+       <!--Slick Slider-->
+       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   
+       <!--Custom Stylesheet-->
+       <link rel="stylesheet" href="./static/css/style.css">
+
+	
+	<style>
+
+                    body {
+                        background: rgb(41, 99, 153);
+                        
+                    }  
+                    
+                    .design {
+                            display: block;
+                            cursor: pointer;
+                            margin-top: 30px;
+                            width: 143px;
+                            height: 204px;
+                            border: 2px solid black; 
+                            margin-left: 17%;
+                            border-radius: 8px 8px 8px 8px;
+                                            }
+                    
+                                           
+			
+                        .bar0 {
+                            text-align: center; 
+                            position:relative;
+                            }
+                            .bar1 {
+                            position:relative; 
+                            text-align: center; 
+                            }
+                            .bar2 {
+                            position:relative; 
+                            text-align: center; 
+                            }
+                            .bar3 {
+                            position:relative; 
+                            text-align: center; 
+                            }
+                            .bar4 {
+                            position:relative; 
+                            text-align: center; 
+                            }
+
+
+                    /* Container */
+                    .container-fluid {
+                        background: rgb(197, 189, 189);
+                        margin: 40px auto 10px;
+                        padding: 20px 40px 0;
+                        max-width: 960px;
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                    }
+
+
+                    /* Page Header */
+                    .page-header {
+                        background:rgb(77, 91, 122);
+                        margin: -30px -40px 40px;
+                        padding: 20px 40px;
+                        border-top: 4px solid rgb(17, 16, 16);
+                        color: #999;
+                        text-transform: uppercase;
+                        }
+                        .page-header h3 {
+                            line-height: 0.88rem;
+                            color:black ;
+                            }
+
+                .el1 {display:inline-block;
+                        display: inline-block;
+                        margin-left: 10%;
+                }
+                .el2 {display:inline-block;
+                        margin-left: 30%;
+                        margin-bottom: 20%;}
+
+                    /* Thumbnail Box */
+                    .caption h4 {
+                        font-size: 5rem;
+                        color: rgb(26, 23, 25);
+                        
+                        }
+                        .caption p {
+                            font-size: 2rem;
+                            color: #999;
+                            
+                            
+                            }
+                            .btn.btn-mini {
+                                font-size: 1rem;
+                                font-family: Impact;
+                                color: rgb(36, 39, 212);
+                                
+                                
+                                }
+
+
+                    /* Carousel Control */
+                    .control-box {
+                        text-align: right;
+                        width: 50%;
+                        color: rgb(17, 16, 16);
+                        }
+                        .carousel-control{
+                            background: #666;
+                            border: 0px;
+                            border-radius: 0px;
+                            display: inline-block;
+                            font-size: 34px;
+                            font-weight: 200;
+                            line-height: 18px;
+                            opacity: 0.5;
+                            padding: 4px 10px 0px;
+                            position: static;
+                            height: 30px;
+                            width: 15px;
+                            }
+
+                        .show-cart li {
+                            display: flex;
+                            }
+                        .card {
+                            margin-bottom: 20px;
+                            }
+                        .card-img-top {
+                            width: 200px;
+                            height: 200px;
+                            align-self: center;
+                            }
+
+
+				
+			</style>
+		</head>
+
+		<body>
+            <!--header-->
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-12">
+                                <div class="btn group">
+                                    <button 
+                                        class="btn border dropdown-toggle my-md-4 text-white" 
+                                        data-toggle="dropdown" 
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        >
+                                            EN
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">IT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 text-center">
+                                <h2 class="my-md-3 site-title text-white">BlockCase</h2>
+                            </div>
+                            <div class="col-md-4 col-12 text-right">
+                                <p class="my-md-4 header-links">
+                                    <a href="#" class="px-2">Sign In</a>
+                                    <a href="#" class="px-1">Create an Account</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-0">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <button 
+                            class="navbar-toggler" 
+                            type="button" 
+                            data-toggle="collapse" 
+                            data-target="#navbarNav" 
+                            aria-controls="navbarNav" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation"
+                            >
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" href="home">HOME <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="pat_bitcoin">P BITCOIN</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="pat_ether">P ETHERIUM</a>
+                                    </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="eth_bitcoin">E BITCOIN</a>
+                                    </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="eth_ether">E ETHERIUM</a>
+                                      </li>
+                                  
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="aboutus">ABOUT US</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="contact">CONTACT</a>
+                                    </li>
+                                </ul>
+                              </div>
+
+                            <div class="navbar-nav">
+                                <li class="nav-item border rounded-circle mx-2 search-icon">
+                                    <i class="fas fa-search p-2"></i>
+                                </li>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+
+
+
+           
+            <div class="container-fluid">
+                <div class="row-fluid"></div>
+                <div class="span12">
+                
+                    <div class="page-header">
+                        <h3>BITCOIN</h3>
+                        <p>Patchwork collection 2020 BloCKCsXbitcoin</p>
+                    </div>
+                        
+                    <div class="carousel slide" id="myCarousel">
+                        <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                            <div class="row">
+                             <div class="col">
+                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button></div>
+                             </div>
+                           </nav>
+                            
+                                    
+                           <div class="span3">
+                                           
+                            <div class="caption">
+                                <div class="el1"><div id ="design0" class="design"></div></div>  
+                                <div class="el2"> <h4>#0PB</h4>
+                                    <p class="card-text">$72</p>
+                                    <p>Block: {{block[0]}}</p>
+                                    <a href="#" data-name="#0PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                            </div>
+                        </div>
+
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design1" class="design"></div></div>  
+                                                <div class="el2"> <h4>#1PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[1]}}</p>
+                                                    <a href="#" data-name="#1PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design2" class="design"></div></div>  
+                                                <div class="el2"> <h4>#2PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[2]}}</p>
+                                                    <a href="#" data-name="#2PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design3" class="design"></div></div>  
+                                                <div class="el2"> <h4>#3PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[3]}}</p>
+                                                    <a href="#" data-name="#3PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design4" class="design"></div></div>  
+                                                <div class="el2"> <h4>#4PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[4]}}</p>
+                                                    <a href="#" data-name="#4PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design5" class="design"></div></div>  
+                                                <div class="el2"> <h4>#5PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[5]}}</p>
+                                                    <a href="#" data-name="#5PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design6" class="design"></div></div>  
+                                                <div class="el2"> <h4>#6PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[6]}}</p>
+                                                    <a href="#" data-name="#6PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="span3">
+                                           
+                                            <div class="caption">
+                                                <div class="el1"><div id ="design7" class="design"></div></div>  
+                                                <div class="el2"> <h4>#7PB</h4>
+                                                    <p class="card-text">$72</p>
+                                                    <p>Block: {{block[7]}}</p>
+                                                    <a href="#" data-name="#7PB" data-price="72" class="add-to-cart btn btn-primary btn-mini">&raquo;Add to Cart</a>
+                                            </div>
+                                        </div>
+                              
+                            
+                                        <!-- Modal -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="show-cart table">
+                      
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+                                
+                              
+                            
+                           
+                        </div>
+                        
+                       
+                    </div><!-- /#myCarousel -->
+                        
+                </div><!-- /.span12 -->          
+                </div><!-- /.row --> 
+                </div><!-- /.container -->
+                
+                
+                        
+                        
+                <strong></p>    
+                </div>
+                
+    
+	
+				
+		<script>
+		    //var data =  [[14, 7, 12, 9, 7, 9, 1, 9, 1, 2, 1, 10, 13, 14, 3, 11, 5, 15, 12, 15, 7, 6, 14, 14, 4, 15, 13, 12, 7, 1, 5, 4, 6, 0, 1, 6, 10, 1, 5, 8, 3, 3, 8, 3, 8], [15, 6, 0, 0, 15, 1, 3, 11, 10, 0, 0, 8, 7, 12, 12, 10, 1, 7, 2, 6, 0, 2, 10, 5, 13, 8, 14, 6, 5, 13, 4, 14, 7, 0, 6, 3, 13, 15, 12, 4, 0, 9, 11, 13, 0], [0, 1, 6, 6, 0, 0, 3, 9, 15, 14, 15, 6, 13, 2, 7, 0, 12, 10, 5, 13, 7, 5, 11, 7, 2, 4, 9, 6, 13, 15, 8, 9, 7, 7, 3, 11, 11, 11, 12, 7, 11, 5, 11, 6, 12], [15, 6, 10, 4, 2, 10, 12, 5, 12, 5, 7, 7, 10, 9, 10, 14, 5, 9, 2, 12, 10, 12, 5, 14, 12, 5, 8, 8, 1, 15, 9, 1, 6, 8, 9, 4, 2, 8, 3, 1, 1, 8, 5, 15, 2], [1, 12, 14, 4, 9, 14, 14, 4, 1, 12, 15, 12, 3, 8, 11, 6, 14, 13, 9, 11, 9, 13, 13, 14, 9, 1, 4, 7, 5, 12, 13, 0, 13, 5, 12, 13, 2, 2, 4, 12, 10, 11, 11, 6, 11]]
+
+            var data  = {{data4}}
+           function bitcoin(data,desi){
+
+                for (var j=0; j< data.length; j = j + 1){
+                    for (var i=data.length*(j/5); i<data.length*((j+1)/5); i = i + 1){
+                    var el = document.createElement("div");
+                    var R = data[i]+(255/36)*((data[i-1]))*2
+                    var G = data[i]+(255/36)*((data[i-4]))*2
+                    var B = data[i]+(255/36)*((data[i-7]))*2
+                    var R0 = data[i]+(255/36)*((data[i+5]))*2
+                    var G0 = data[i]+(255/36)*((data[i+10]))*2
+                    var B0 = data[i]+(255/36)*((data[i+13]))*2
+                    el.className = "bar"+j;
+                    el.style.left=(140*j/5)+"px";
+                    
+                    el.style.top= -200*(j)+"px";
+                    
+                    el.style.width = (140/5)+"px";
+                    el.style.height = (200/9)+"px";
+                    if (j <3){
+                        el.style.backgroundColor = "rgb("+R0+","+G0+","+B0+")";}
+                    else{
+                        el.style.backgroundColor = "rgb("+R+","+G+","+B+")";
+                    document.className = "design";}
+                    document.querySelector(desi).append(el); 
+                    } 
+                }}
+       
+          
+            bitcoin(data[0],"#design0")
+            bitcoin(data[1],"#design1")
+            bitcoin(data[2],"#design2")
+            bitcoin(data[3],"#design3")
+
+            bitcoin(data[4],"#design4")
+            bitcoin(data[5],"#design5")
+            bitcoin(data[6],"#design6")
+            bitcoin(data[7],"#design7")
+      
+      
+
+
+        // ************************************************
+// Shopping Cart API
+// ************************************************
+
+var shoppingCart = (function() {
+  // =============================
+  // Private methods and propeties
+  // =============================
+  cart = [];
+  
+  // Constructor
+  function Item(name, price, count) {
+    this.name = name;
+    this.price = price;
+    this.count = count;
+  }
+  
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+  
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+  
+  // Add to cart
+  obj.addItemToCart = function(name, price, count) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart 
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // Total cart
+  obj.totalCart = function() {
+    var totalCart = 0;
+    for(var item in cart) {
+      totalCart += cart[item].price * cart[item].count;
+    }
+    return Number(totalCart.toFixed(2));
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+
+  // cart : Array
+  // Item : Object/Class
+  // addItemToCart : Function
+  // removeItemFromCart : Function
+  // removeItemFromCartAll : Function
+  // clearCart : Function
+  // countCart : Function
+  // totalCart : Function
+  // listCart : Function
+  // saveCart : Function
+  // loadCart : Function
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// ***************************************** 
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  var price = Number($(this).data('price'));
+  shoppingCart.addItemToCart(name, price, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+      + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+      + " = " 
+      + "<td>" + cartArray[i].total + "</td>" 
+      +  "</tr>";
+  }
+  $('.show-cart').html(output);
+  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-count').html(shoppingCart.totalCount());
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+
+// -1
+$('.show-cart').on("click", ".minus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCart(name);
+  displayCart();
+})
+// +1
+$('.show-cart').on("click", ".plus-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.addItemToCart(name);
+  displayCart();
+})
+
+// Item count input
+$('.show-cart').on("change", ".item-count", function(event) {
+   var name = $(this).data('name');
+   var count = Number($(this).val());
+  shoppingCart.setCountForItem(name, count);
+  displayCart();
+});
+
+displayCart();
+
+
+			
+		</script>
+
+
+    </body>
+</html>

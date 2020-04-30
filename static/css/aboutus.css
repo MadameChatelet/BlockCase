@@ -1,0 +1,15 @@
+/*About us */
+about-us{
+    background-color: red;
+  }
+  
+  .h2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 3em;
+      margin-left: 10%;
+      margin-right: 10%;
+      color: black;
+    }   
